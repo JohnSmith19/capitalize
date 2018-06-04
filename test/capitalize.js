@@ -8,4 +8,8 @@ describe("capitalize", function() {
     expect(capitalize("express")).to.equal("Express");
     expect(capitalize("cats")).to.equals("Cats");
   });
+
+  it("makes the rest of the string lowercase", function() {
+    expect(capitalize("JavaScript")).to.equal("Javascript");
+  });
 });
