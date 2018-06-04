@@ -38,4 +38,8 @@ describe("capitalize", function() {
     expect(capitalize(str)).to.equal("Who is javascript?");
     expect(str.valueOf()).to.equal("who is JavaScript?");
   });
+
+  it("changes the value", function() {
+    expect(capitalize("foo")).not.to.equal("foo");
+  });
 });
